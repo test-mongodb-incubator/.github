@@ -202,7 +202,7 @@ Projects will reside under a dedicated GitHub organization:
 
 ### Tooling and Templates
 
-* README templates with status badges
+* [README templates](../README.md) with status badges
 * Project scaffolding templates for Experimental/Incubating projects
 * Label definitions for GitHub workflows
 * Automation scripts for issue triage and archiving
