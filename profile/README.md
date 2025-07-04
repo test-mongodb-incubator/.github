@@ -13,7 +13,6 @@
 * [Governance](#governance)
 * [Communication and Labeling Guidelines](#communication-and-labeling-guidelines)
 * [Project Promotion and Demotion Process](#project-promotion-and-demotion-process)
-* [Repository Organization](#repository-organization)
 * [Community Engagement](#community-engagement)
 * [Roles & Responsibilities](#roles--responsibilities)
 * [Appendix](#appendix)
@@ -148,7 +147,7 @@ Governance should remain lightweight until external contributors are introduced.
 * Each project must document its governance model in the README or CONTRIBUTING.md
 * Maintainers must be identified
 * Decision-making and issue resolution processes must be clear
-* External contributions should follow a Code of Conduct (e.g. MongoDB Community CoC)
+* External contributions should follow the [MongoDB Code of Conduct](https://www.mongodb.com/community-code-of-conduct)
 
 ## Communication and Labeling Guidelines
 
@@ -156,7 +155,7 @@ To avoid confusion, each project must:
 
 * Display its status (Experimental, Incubating, Supported, Retired) via a README badge
 * Include a standard disclaimer about the current level of support
-* Use a reusable project README template
+* Use a reusable [project README template](../README.md)
 * Optionally use GitHub Labels (e.g. `status/experimental`, `status/supported`)
 
 ## Project Promotion and Demotion Process
@@ -169,14 +168,6 @@ Promotion and demotion are based on:
 * Stability and maturity of features
 * Strategic alignment with MongoDB’s roadmap
 * Maintainer bandwidth and interest
-
-## Repository Organization
-
-Projects will reside under a dedicated GitHub organization:
-
-* Suggested name: `mongodb-incubator` or `mongodb-contrib`
-* The org must clearly state its purpose in its README and org-level metadata
-* Projects under this org are NOT guaranteed production support unless promoted
 
 ## Community Engagement
 
