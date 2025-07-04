@@ -189,7 +189,7 @@ Promotion and demotion are based on:
 ### Similar Incubation Models
 
 * **Apache Incubator**: Emphasis on mentorship, IP transfer, open governance
-* **CNCF Sandbox**: Focused on low-friction innovation and community building
+* **CNCF Sandbox**: Focused on low-friction innovation and community building (see [CNCF Project Lifecycle & Process](https://github.com/cncf/toc/blob/main/process/README.md)
 
 ### Tooling and Templates
 
