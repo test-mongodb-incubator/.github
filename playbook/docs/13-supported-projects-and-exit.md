@@ -4,7 +4,7 @@
 
 In this framework, **Supported** is not “the final tier inside the incubator.” It is an **exit ramp** to a long-term home with product-aligned ownership.
 
-If you’re looking for tier definitions and user expectations, start with `playbook/docs/11-tiers-and-expectations.md`.
+If you’re looking for tier definitions and user expectations, start with [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## What “Supported” means (and what it doesn’t)
 
@@ -31,7 +31,7 @@ When a project is marked `supported`, `pipeline.yaml` must satisfy the Supported
 - `release.versioning: semver`
 - `release.current_version` present
 
-See `playbook/docs/40-directory-and-metadata.md` for how metadata is used for discovery.
+See [40-directory-and-metadata.md](./40-directory-and-metadata.md) for how metadata is used for discovery.
 
 ## Sponsor PM responsibilities
 
@@ -45,8 +45,8 @@ Minimum responsibilities:
 - Partner on the exit plan: target org/home, timeline, and risks.
 - Ensure the project has a clear maintenance posture (triage expectations, release cadence, compatibility story).
 
-Governance expectations: `playbook/docs/20-governance-model.md`.
-Review cadence and health checks: `playbook/docs/22-review-cadence-and-health.md`.
+Governance expectations: [20-governance-model.md](./20-governance-model.md).
+Review cadence and health checks: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## Maintainer and owner responsibilities (Supported)
 
@@ -57,8 +57,8 @@ Supported maintainers should be able to commit to:
 - Security intake and disclosure path (even if it’s “report via SECURITY.md and we will respond”).
 - Change management: clear deprecation/breaking-change notes and migration guidance.
 
-Release guidance: `playbook/docs/32-release-and-maintenance.md`.
-Security guidance: `playbook/docs/33-security-and-responsible-disclosure.md`.
+Release guidance: [32-release-and-maintenance.md](./32-release-and-maintenance.md).
+Security guidance: [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md).
 
 ## Ownership transfer checklist (before exit)
 
@@ -80,7 +80,7 @@ Before relocating the repo, verify:
   - License is correct and third-party notices are present if needed.
   - No internal-only references, secrets, or confidential docs are in the repo history.
 
-Promotion requirements and process: `playbook/docs/12-promotion-and-demotion.md`.
+Promotion requirements and process: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
 
 ## Repo relocation process (preserving history)
 
@@ -106,7 +106,7 @@ Recommended process:
    - Close out the promotion/exit issue with final links and decision record.
 
 The exit decision should be recorded through the intake workflow (issues + labels), even if the work happens across multiple repos.
-Intake workflow: `playbook/docs/30-intake-process.md`.
+Intake workflow: [30-intake-process.md](./30-intake-process.md).
 
 If a move is not possible immediately (org constraints, permissions), the repo can remain temporarily in the incubator, but it must:
 
@@ -126,7 +126,7 @@ Every exit should include a small comms package so users aren’t surprised:
 - **Release notes**
   - If there are breaking changes during the transition, document them in the release notes and provide migration guidance.
 
-Showcase guidance: `playbook/docs/41-showcase-program.md`.
+Showcase guidance: [41-showcase-program.md](./41-showcase-program.md).
 
 ## If the exit plan fails
 
@@ -135,5 +135,5 @@ If the project cannot secure committed ownership or a durable home:
 - Consider demotion back to Incubating (or Experimental) to reduce implied promises.
 - If unmaintained or strategically misaligned, follow the deprecation/retirement process.
 
-Demotion/retirement criteria: `playbook/docs/12-promotion-and-demotion.md`.
-Tier and deprecation guidance: `playbook/docs/11-tiers-and-expectations.md`.
+Demotion/retirement criteria: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
+Tier and deprecation guidance: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).

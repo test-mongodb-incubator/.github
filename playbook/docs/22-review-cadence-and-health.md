@@ -4,8 +4,8 @@
 
 The goal of health checks is simple: keep the directory trustworthy and reduce user risk. A repo can be quiet and still be healthy, but it must not be misleading.
 
-Governance context: `playbook/docs/20-governance-model.md`.
-Role expectations: `playbook/docs/21-roles-and-responsibilities.md`.
+Governance context: [20-governance-model.md](./20-governance-model.md).
+Role expectations: [21-roles-and-responsibilities.md](./21-roles-and-responsibilities.md).
 
 ## Required heartbeat
 
@@ -45,8 +45,8 @@ Health is assessed using a mix of signals. Not all signals apply to every projec
 - External interest (stars/forks, issues/PRs, downstream references).
 - Strategic fit remains valid (still solving the right problem).
 
-Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
-Signals and metrics: `playbook/docs/50-success-metrics.md`.
+Tier expectations: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Signals and metrics: [50-success-metrics.md](./50-success-metrics.md).
 
 ## Health states
 
@@ -93,7 +93,7 @@ Required changes (usually a single PR):
 - Update `README.md` tier badge/support statement to match.
 - Publish a short showcase update explaining the change (optional but recommended).
 
-Process and criteria: `playbook/docs/12-promotion-and-demotion.md`.
+Process and criteria: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
 
 ### 4) Retirement recommendation (archive)
 
@@ -105,7 +105,7 @@ Required changes:
 - When archiving: set `project.tier: retired`, set `project.lifecycle.sunset_date`, set `retirement.status: archived`, and include `retirement.message` + `retirement.alternatives`.
 - Add a prominent README banner and provide migration guidance.
 
-Retirement guidance: `playbook/docs/11-tiers-and-expectations.md`.
+Retirement guidance: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## Automation expectations
 
@@ -118,7 +118,7 @@ Suggested automation behaviors:
 - Scheduled workflow flags repos with invalid `pipeline.yaml`.
 - Health issues use consistent labels (e.g., `health:needs-attention`, `health:at-risk`).
 
-If you’re implementing the directory and metadata pipeline, see `playbook/docs/40-directory-and-metadata.md`.
+If you’re implementing the directory and metadata pipeline, see [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 ## Where health gets tracked (system of record)
 
@@ -128,5 +128,5 @@ Health tracking should be GitHub-native:
 - Linked PRs for tier/metadata updates
 - Steering committee decision record
 
-Intake workflow: `playbook/docs/30-intake-process.md`.
-Steering operations: `playbook/docs/02-quickstart-for-steering-committee.md`.
+Intake workflow: [30-intake-process.md](./30-intake-process.md).
+Steering operations: [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).

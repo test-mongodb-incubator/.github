@@ -4,8 +4,8 @@
 
 This program favors clarity over formality. Even Experimental repos must be honest about their security posture.
 
-Repo baseline requirements: `playbook/docs/31-repo-requirements.md`.
-Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
+Repo baseline requirements: [31-repo-requirements.md](./31-repo-requirements.md).
+Tier expectations: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## Reporting security issues
 
@@ -34,7 +34,7 @@ If your project publishes an artifact (package/image), document:
 - supported runtime/framework versions
 - supported MongoDB server versions (where relevant)
 
-Release guidance: `playbook/docs/32-release-and-maintenance.md`.
+Release guidance: [32-release-and-maintenance.md](./32-release-and-maintenance.md).
 
 ## Secret scanning and provenance expectations
 
@@ -92,7 +92,7 @@ Recommended:
 - More formal vulnerability response expectations (even if still “best-effort”).
 - Security considerations documented (threat model, safe configuration, hardening guidance) if the project is used in production contexts.
 
-Supported guidance: `playbook/docs/13-supported-projects-and-exit.md`.
+Supported guidance: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ## If a security issue affects tiering
 
@@ -101,5 +101,5 @@ Security posture can drive tier changes:
 - If Incubating+ cannot sustain a security reporting path or timely handling, demotion may be recommended to reduce implied promises.
 - If a repo is unmaintained and security issues cannot be addressed, retirement may be recommended.
 
-Tier change process: `playbook/docs/12-promotion-and-demotion.md`.
-Review and health escalation: `playbook/docs/22-review-cadence-and-health.md`.
+Tier change process: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
+Review and health escalation: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).

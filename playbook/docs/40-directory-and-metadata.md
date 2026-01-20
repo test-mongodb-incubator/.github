@@ -8,9 +8,9 @@ The directory is only as good as the metadata. `pipeline.yaml` is the machine-re
 - Tier signaling and user trust (clear support posture)
 - Health automation (stale review detection and “still active” heartbeat)
 
-Repo baseline requirements: `playbook/docs/31-repo-requirements.md`.
-Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
-Health and heartbeat: `playbook/docs/22-review-cadence-and-health.md`.
+Repo baseline requirements: [31-repo-requirements.md](./31-repo-requirements.md).
+Tier expectations: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Health and heartbeat: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## Why `pipeline.yaml` exists
 
@@ -105,7 +105,7 @@ Schema-gated requirements include:
 - `release.versioning: semver`
 - `release.current_version`
 
-Supported and exit: `playbook/docs/13-supported-projects-and-exit.md`.
+Supported and exit: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ### Retired
 
@@ -117,7 +117,7 @@ Schema-gated requirements include:
 - `retirement.status: archived`
 - `retirement.message` and `retirement.alternatives`
 
-Retirement sequencing: `playbook/docs/11-tiers-and-expectations.md`.
+Retirement sequencing: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## How the directory gets generated
 
@@ -147,8 +147,8 @@ Metadata changes are user-visible and can affect trust. Treat them like a small 
   - follow the tier-change process
   - publish a short showcase update explaining why
 
-Tier changes: `playbook/docs/12-promotion-and-demotion.md`.
-Showcase expectations: `playbook/docs/41-showcase-program.md`.
+Tier changes: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
+Showcase expectations: [41-showcase-program.md](./41-showcase-program.md).
 
 ### What should trigger a metadata update
 

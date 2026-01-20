@@ -4,9 +4,9 @@
 
 The showcase is the narrative layer of the pipeline. It turns projects into discoverable, subscribable updates without requiring a separate CMS.
 
-Directory and metadata (what exists): `playbook/docs/40-directory-and-metadata.md`.
-Tier contract (expectations): `playbook/docs/11-tiers-and-expectations.md`.
-Comms snippets: `playbook/docs/06-comms-kit.md`.
+Directory and metadata (what exists): [40-directory-and-metadata.md](./40-directory-and-metadata.md).
+Tier contract (expectations): [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Comms snippets: [06-comms-kit.md](./06-comms-kit.md).
 
 ## What qualifies as a showcase entry
 
@@ -30,7 +30,7 @@ Showcase posts should be linkable from the directory:
 - Add each post under `links.showcase[]` in the project’s `pipeline.yaml`.
 - Keep `links.docs` pointing at the best “start here” docs (often the README).
 
-Directory/metadata contract: `playbook/docs/40-directory-and-metadata.md`.
+Directory/metadata contract: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 ## Cadence expectations
 
@@ -43,7 +43,7 @@ Recommended minimum cadence:
 
 If a project is not actively progressing, publish a short status update (“paused”, “seeking maintainers”, “deprecated”, etc.) so users aren’t guessing.
 
-Health/heartbeat context: `playbook/docs/22-review-cadence-and-health.md`.
+Health/heartbeat context: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## Showcase entry types
 
@@ -98,7 +98,7 @@ Use when you need help to keep momentum:
 - maintainer help
 - docs/testing help
 
-Comms copy/paste: `playbook/docs/06-comms-kit.md`.
+Comms copy/paste: [06-comms-kit.md](./06-comms-kit.md).
 
 ## Where it publishes
 
@@ -128,8 +128,8 @@ If you use an `intake` repo/project board, you can track showcase items as light
 - “Showcase: Launch <repo>”
 - “Showcase: Q1 update for <repo>”
 
-Intake workflow: `playbook/docs/30-intake-process.md`.
-Roles (DevRel/PMM): `playbook/docs/21-roles-and-responsibilities.md`.
+Intake workflow: [30-intake-process.md](./30-intake-process.md).
+Roles (DevRel/PMM): [21-roles-and-responsibilities.md](./21-roles-and-responsibilities.md).
 
 ## Subscription model
 
@@ -147,4 +147,4 @@ Avoid over-polishing. A “good enough” showcase update:
 - includes at least one link to try it
 - names what changed and what’s next
 
-If you need higher leverage content (e.g., spotlighting), see `playbook/docs/42-spotlighting-and-promotion-content.md`.
+If you need higher leverage content (e.g., spotlighting), see [42-spotlighting-and-promotion-content.md](./42-spotlighting-and-promotion-content.md).

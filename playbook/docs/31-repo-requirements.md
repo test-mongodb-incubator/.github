@@ -8,8 +8,8 @@ These requirements exist to ensure:
 - The directory can reliably discover and classify repos.
 - Projects remain safe to consume and contribute to.
 
-Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
-Metadata contract: `playbook/docs/40-directory-and-metadata.md`.
+Tier expectations: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Metadata contract: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 ## Required root files
 
@@ -25,7 +25,7 @@ Some repos may also need:
 
 - `THIRD_PARTY_NOTICES` (or `THIRD_PARTY_NOTICES.md`) if third-party OSS is included.
 
-Legal guidance: `playbook/docs/34-legal-and-licensing.md`.
+Legal guidance: [34-legal-and-licensing.md](./34-legal-and-licensing.md).
 
 ### `README.md` (minimum)
 
@@ -36,7 +36,7 @@ Your README must include, near the top:
 - How to try it quickly (example/quickstart)
 - Where to get help (issues/discussions links)
 
-Builder quickstart: `playbook/docs/01-quickstart-for-builders.md`.
+Builder quickstart: [01-quickstart-for-builders.md](./01-quickstart-for-builders.md).
 
 ### `LICENSE`
 
@@ -57,7 +57,7 @@ Must include:
 - How to report vulnerabilities (private channel preferred over public issues)
 - Expected response posture (even if “best-effort”)
 
-Security guidance: `playbook/docs/33-security-and-responsible-disclosure.md`.
+Security guidance: [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md).
 
 ## Required metadata (`pipeline.yaml`)
 
@@ -93,8 +93,8 @@ Minimum expectations:
 
 If a repo cannot be built/tested automatically (rare), the README must explain how validation is performed.
 
-Release guidance: `playbook/docs/32-release-and-maintenance.md`.
-Health expectations: `playbook/docs/22-review-cadence-and-health.md`.
+Release guidance: [32-release-and-maintenance.md](./32-release-and-maintenance.md).
+Health expectations: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## Naming conventions
 
@@ -123,4 +123,4 @@ To keep the program consistent at scale, enforce requirements via GitHub Actions
 - Check required files exist.
 - Flag stale `project.lifecycle.last_reviewed` where applicable.
 
-Directory mechanics and validator integration: `playbook/docs/40-directory-and-metadata.md`.
+Directory mechanics and validator integration: [40-directory-and-metadata.md](./40-directory-and-metadata.md).

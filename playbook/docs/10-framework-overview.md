@@ -30,7 +30,7 @@ This framework is not:
 
 Initially, projects can be proposed by **internal MongoDB team members**. Contributions from external developers to accepted repos are welcome via the normal GitHub PR flow, subject to the repo’s contribution requirements.
 
-Eligibility and the intake steps are defined in `playbook/docs/30-intake-process.md`.
+Eligibility and the intake steps are defined in [30-intake-process.md](./30-intake-process.md).
 
 ## The core contract: clarity of expectations
 
@@ -41,8 +41,8 @@ Every incubated project must make the following obvious to a user within a minut
 - Where support happens (issues/discussions and a support statement)
 - Whether it is actively maintained (metadata “last reviewed” signals, releases, and recent updates)
 
-Repo requirements are defined in `playbook/docs/31-repo-requirements.md`.
-Metadata and discovery are defined in `playbook/docs/40-directory-and-metadata.md`.
+Repo requirements are defined in [31-repo-requirements.md](./31-repo-requirements.md).
+Metadata and discovery are defined in [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 ## How the framework works (high level)
 
@@ -55,8 +55,8 @@ At a high level, the pipeline is a lifecycle with consistent artifacts:
 5. **Broadcast:** publish periodic showcase updates so users can follow along.
 6. **Decide:** promote, continue incubating, or retire based on evidence and fit.
 
-Builder workflow: `playbook/docs/01-quickstart-for-builders.md`.
-Steering committee workflow: `playbook/docs/02-quickstart-for-steering-committee.md`.
+Builder workflow: [01-quickstart-for-builders.md](./01-quickstart-for-builders.md).
+Steering committee workflow: [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).
 
 ## What lives where (org-level building blocks)
 
@@ -80,14 +80,14 @@ Tiers are how we communicate maturity and expected risk:
 - **Supported:** a product-aligned ownership model exists; exits incubation to a long-term home.
 - **Retired:** archived with a clear explanation and alternatives.
 
-Full expectations per tier live in `playbook/docs/11-tiers-and-expectations.md`.
+Full expectations per tier live in [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## Promotion, demotion, and exit (at a glance)
 
 Projects change tiers based on evidence and readiness, not time spent in the org.
 
-- Promotion and demotion criteria and required artifacts: `playbook/docs/12-promotion-and-demotion.md`
-- How “Supported” works and what it means to exit incubation: `playbook/docs/13-supported-projects-and-exit.md`
+- Promotion and demotion criteria and required artifacts: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md)
+- How “Supported” works and what it means to exit incubation: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md)
 
 ## Governance (at a glance)
 
@@ -97,18 +97,18 @@ Governance is intentionally minimal:
 - A steering committee provides periodic review, recommendation, and spotlighting.
 - Decisions are documented in GitHub (issues, labels, and meeting notes), so the program stays transparent and auditable.
 
-Governance model: `playbook/docs/20-governance-model.md`.
-Roles: `playbook/docs/21-roles-and-responsibilities.md`.
-Cadence and health checks: `playbook/docs/22-review-cadence-and-health.md`.
+Governance model: [20-governance-model.md](./20-governance-model.md).
+Roles: [21-roles-and-responsibilities.md](./21-roles-and-responsibilities.md).
+Cadence and health checks: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## Directory and showcase (why both exist)
 
 - The **Directory** is the machine-readable registry of what exists, who owns it, and what tier it’s in.
 - The **Showcase** is the narrative layer: launch posts, updates, deep dives, and “request for contributors.”
 
-Directory: `playbook/docs/40-directory-and-metadata.md`.
-Showcase program: `playbook/docs/41-showcase-program.md`.
-Spotlighting and promotion content: `playbook/docs/42-spotlighting-and-promotion-content.md`.
+Directory: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
+Showcase program: [41-showcase-program.md](./41-showcase-program.md).
+Spotlighting and promotion content: [42-spotlighting-and-promotion-content.md](./42-spotlighting-and-promotion-content.md).
 
 ## What success looks like (high level)
 
@@ -121,5 +121,5 @@ Success is measured by:
 
 Metrics and evidence guidance:
 
-- `playbook/docs/50-success-metrics.md`
-- `playbook/docs/51-promotion-evidence-guide.md`
+- [50-success-metrics.md](./50-success-metrics.md)
+- [51-promotion-evidence-guide.md](./51-promotion-evidence-guide.md)

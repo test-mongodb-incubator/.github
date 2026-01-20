@@ -43,7 +43,7 @@ Choose **Incubating** if:
 
 If you’re uncertain, start as **Experimental** and promote once you have usage signals.
 
-For detailed tier expectations, see `playbook/docs/11-tiers-and-expectations.md`.
+For detailed tier expectations, see [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## Create a repo (recommended: from a template)
 
@@ -66,7 +66,7 @@ At minimum, every incubator repo should include:
 
 Other required files (often inherited from the org’s `.github` repo) are defined in:
 
-- `playbook/docs/31-repo-requirements.md`
+- [31-repo-requirements.md](./31-repo-requirements.md)
 
 ### `README.md` (minimum)
 
@@ -88,7 +88,7 @@ Recommended extras that pay off quickly:
 Use the program’s default license unless you have a compelling reason not to.
 
 - Typical default: Apache-2.0
-- If you include third-party code, be ready to add a `THIRD_PARTY_NOTICES` file (see `playbook/docs/34-legal-and-licensing.md`).
+- If you include third-party code, be ready to add a `THIRD_PARTY_NOTICES` file (see [34-legal-and-licensing.md](./34-legal-and-licensing.md)).
 
 ### `pipeline.yaml` (minimum)
 
@@ -100,7 +100,7 @@ Use the program’s default license unless you have a compelling reason not to.
 - Review cadence automation (where enabled)
 
 The authoritative schema is `playbook/schemas/pipeline.schema.json`.
-For more detail on how metadata powers discovery, see `playbook/docs/40-directory-and-metadata.md`.
+For more detail on how metadata powers discovery, see [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 #### Minimal `pipeline.yaml` for **Experimental**
 
@@ -247,7 +247,7 @@ Fallback (if no `intake` repo exists yet):
   - Owner + maintainers
   - Any “review needed” flags (legal, security, branding)
 
-For the full lifecycle and decision states, see `playbook/docs/30-intake-process.md`.
+For the full lifecycle and decision states, see [30-intake-process.md](./30-intake-process.md).
 
 ## First release checklist (minimal)
 
@@ -261,7 +261,7 @@ You should be able to do the following within your first 1–2 sessions:
   - `enhancement`
   - `help wanted` / `good first issue` (when relevant)
 
-For deeper guidance, see `playbook/docs/32-release-and-maintenance.md`.
+For deeper guidance, see [32-release-and-maintenance.md](./32-release-and-maintenance.md).
 
 ## Publish your first showcase update
 
@@ -276,4 +276,4 @@ Minimum “good” first post:
 - What you need next (feedback, adopters, contributors)
 - A short roadmap (3–5 bullets)
 
-See `playbook/docs/41-showcase-program.md` for what qualifies and how often to post.
+See [41-showcase-program.md](./41-showcase-program.md) for what qualifies and how often to post.

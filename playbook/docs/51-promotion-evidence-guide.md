@@ -4,10 +4,10 @@
 
 Promotion decisions should feel predictable. This guide tells you what to collect, what “minimum bar” looks like, and how to write a promotion request that a steering committee can evaluate quickly.
 
-Tier change process: `playbook/docs/12-promotion-and-demotion.md`.
-Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
-Metadata contract: `playbook/docs/40-directory-and-metadata.md`.
-Repo requirements: `playbook/docs/31-repo-requirements.md`.
+Tier change process: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
+Tier expectations: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Metadata contract: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
+Repo requirements: [31-repo-requirements.md](./31-repo-requirements.md).
 
 ## What evidence matters (by transition)
 
@@ -44,7 +44,7 @@ Promotion is fundamentally about user trust:
 - Licensing is correct and third-party notices handled (if applicable)
 - No obvious reputational risk from unclear messaging
 
-Success signals reference: `playbook/docs/50-success-metrics.md`.
+Success signals reference: [50-success-metrics.md](./50-success-metrics.md).
 
 ## Minimum bar: Experimental → Incubating
 
@@ -83,7 +83,7 @@ Supported implies durable ownership and a path out of the incubator org. The min
 - Clear support channels and responsiveness posture that matches “Supported”.
 - Exit plan: where the repo will live long-term and who will own it.
 
-Supported and exit guidance: `playbook/docs/13-supported-projects-and-exit.md`.
+Supported and exit guidance: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ### Strong evidence (nice to have)
 

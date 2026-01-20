@@ -4,8 +4,8 @@
 
 This document is intentionally practical: it tells you what “good enough” looks like per tier and what to do before you publish.
 
-Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
-Repo baseline requirements: `playbook/docs/31-repo-requirements.md`.
+Tier expectations: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Repo baseline requirements: [31-repo-requirements.md](./31-repo-requirements.md).
 
 ## Pre-release checks
 
@@ -18,14 +18,14 @@ Before publishing a release (or making a repo public), verify:
 - README accurately states tier and support posture.
 - Security reporting path exists and is linked (especially Incubating+).
 
-Security guidance: `playbook/docs/33-security-and-responsible-disclosure.md`.
+Security guidance: [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md).
 
 ### Licensing and third-party notices
 
 - License is Apache-2.0 (or approved exception).
 - Third-party dependencies are understood; add `THIRD_PARTY_NOTICES` if you bundle third-party code or need explicit attribution.
 
-Legal guidance: `playbook/docs/34-legal-and-licensing.md`.
+Legal guidance: [34-legal-and-licensing.md](./34-legal-and-licensing.md).
 
 ### Build and documentation
 
@@ -90,7 +90,7 @@ Maintenance expectations are tier-dependent. The program values honesty: if you 
 
 - Best-effort responses; no SLAs.
 - Keep tier signaling accurate.
-- Periodic heartbeat (review) per `playbook/docs/22-review-cadence-and-health.md`.
+- Periodic heartbeat (review) per [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ### Incubating
 
@@ -105,7 +105,7 @@ Maintenance expectations are tier-dependent. The program values honesty: if you 
 - Clear deprecation and breaking-change communication.
 - Sponsor PM and exit plan tracked until relocation.
 
-Supported and exit guidance: `playbook/docs/13-supported-projects-and-exit.md`.
+Supported and exit guidance: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ## Deprecation guidance (how to communicate)
 
@@ -121,6 +121,6 @@ Recommended steps:
 3. Publish a showcase update explaining why and what to do next.
 4. When archiving, follow the “Retired” requirements (tier + sunset date + archived status).
 
-Tier and retirement details: `playbook/docs/11-tiers-and-expectations.md`.
-Tier-change process: `playbook/docs/12-promotion-and-demotion.md`.
-Showcase guidance: `playbook/docs/41-showcase-program.md`.
+Tier and retirement details: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Tier-change process: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
+Showcase guidance: [41-showcase-program.md](./41-showcase-program.md).

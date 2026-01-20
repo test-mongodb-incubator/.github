@@ -4,17 +4,17 @@
 
 Tier changes exist to protect users and keep the directory trustworthy. They are based on **evidence and readiness**, not time-in-tier.
 
-For tier definitions, see `playbook/docs/11-tiers-and-expectations.md`.
+For tier definitions, see [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## Who decides (decision owners)
 
 - **Project owner / maintainers** own the proposal, the evidence, and the implementation work (docs, metadata, releases).
 - **Steering committee** reviews and records a recommendation (accept / request changes / defer / retire recommendation).
-- **Supported** requires a **Sponsor PM** and an exit plan (see `playbook/docs/13-supported-projects-and-exit.md`).
+- **Supported** requires a **Sponsor PM** and an exit plan (see [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md)).
 
-Operational details for steering review: `playbook/docs/02-quickstart-for-steering-committee.md`.
-Governance model: `playbook/docs/20-governance-model.md`.
-Review cadence and health checks: `playbook/docs/22-review-cadence-and-health.md`.
+Operational details for steering review: [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).
+Governance model: [20-governance-model.md](./20-governance-model.md).
+Review cadence and health checks: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## What triggers promotion consideration
 
@@ -45,8 +45,8 @@ Promotion is an evidence exercise. Evidence can be qualitative, quantitative, or
 - Health: recent activity, CI green, response to issues, documented roadmap.
 - Fit: why this should exist as an incubated project (vs a one-off gist, a blog snippet, or an upstream contribution only).
 
-Evidence guidance and a “promotion packet” template: `playbook/docs/51-promotion-evidence-guide.md`.
-Signals and metrics: `playbook/docs/50-success-metrics.md`.
+Evidence guidance and a “promotion packet” template: [51-promotion-evidence-guide.md](./51-promotion-evidence-guide.md).
+Signals and metrics: [50-success-metrics.md](./50-success-metrics.md).
 
 ## Target tier requirements (schema-aligned)
 
@@ -82,7 +82,7 @@ Metadata requirements (high level; exact rules in schema):
 - `release.versioning` is `semver` and `release.current_version` present.
 - `project.lifecycle.last_reviewed` present.
 
-Supported is an “exit ramp”: see `playbook/docs/13-supported-projects-and-exit.md`.
+Supported is an “exit ramp”: see [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ### Any tier → Retired (minimum bar)
 
@@ -98,7 +98,7 @@ Metadata requirements (high level; exact rules in schema):
 - `retirement.status` set to `archived`.
 - `retirement.message` and `retirement.alternatives` present.
 
-Deprecation sequencing guidance: `playbook/docs/11-tiers-and-expectations.md`.
+Deprecation sequencing guidance: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## What triggers demotion or retirement
 
@@ -131,9 +131,9 @@ Every tier change must include these updates (usually in the same PR as the meta
 
 If you’re changing to (or from) Incubating/Supported, also review:
 
-- `playbook/docs/32-release-and-maintenance.md`
-- `playbook/docs/33-security-and-responsible-disclosure.md`
-- `playbook/docs/34-legal-and-licensing.md`
+- [32-release-and-maintenance.md](./32-release-and-maintenance.md)
+- [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md)
+- [34-legal-and-licensing.md](./34-legal-and-licensing.md)
 
 ## The process (GitHub-native)
 
@@ -157,9 +157,9 @@ Use the intake workflow as the system of record (issues + labels + decision reco
    - Merge the change PR.
    - Publish the showcase update and ensure directory metadata is accurate.
 
-Intake workflow details: `playbook/docs/30-intake-process.md`.
-Directory and metadata mechanics: `playbook/docs/40-directory-and-metadata.md`.
-Showcase expectations: `playbook/docs/41-showcase-program.md`.
+Intake workflow details: [30-intake-process.md](./30-intake-process.md).
+Directory and metadata mechanics: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
+Showcase expectations: [41-showcase-program.md](./41-showcase-program.md).
 
 ## Fast path (strategic areas)
 

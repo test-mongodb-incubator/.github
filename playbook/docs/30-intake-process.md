@@ -4,8 +4,8 @@
 
 Intake is the system of record for program decisions (acceptance, tiering, and early risk review). It keeps the directory trustworthy without creating a heavy approval board.
 
-Builder happy path: `playbook/docs/01-quickstart-for-builders.md`.
-Governance context: `playbook/docs/20-governance-model.md`.
+Builder happy path: [01-quickstart-for-builders.md](./01-quickstart-for-builders.md).
+Governance context: [20-governance-model.md](./20-governance-model.md).
 
 ## Eligibility (initially internal-only)
 
@@ -32,15 +32,15 @@ Choose between:
 - **Experimental** (default; fastest path)
 - **Incubating** (requires stronger hygiene and metadata)
 
-Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
+Tier expectations: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ### Step 1: Create the repo
 
 - Create from an org template if available (recommended).
 - Add the minimum required files and `pipeline.yaml`.
 
-Repo requirements: `playbook/docs/31-repo-requirements.md`.
-Metadata: `playbook/docs/40-directory-and-metadata.md`.
+Repo requirements: [31-repo-requirements.md](./31-repo-requirements.md).
+Metadata: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 ### Step 2: Open an intake issue
 
@@ -64,7 +64,7 @@ Steering committee (or designated triagers) reviews the submission and assigns o
 - **Defer**
 - **Not accepted**
 
-Operational decisioning: `playbook/docs/02-quickstart-for-steering-committee.md`.
+Operational decisioning: [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).
 
 ### Step 4: Acceptance and listing
 
@@ -76,7 +76,7 @@ Once accepted:
 
 If the project is accepted as Experimental but aspires to Incubating, capture the promotion criteria as action items.
 
-Promotion guidance: `playbook/docs/12-promotion-and-demotion.md`.
+Promotion guidance: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
 
 ## Triage criteria (how we decide)
 
@@ -101,8 +101,8 @@ At intake we assess “obvious” risks:
 - **Legal/licensing:** is the code safe to open source? any third-party code? license compatibility?
 - **Reputation:** does the README set accurate expectations, or could users assume it’s supported when it’s not?
 
-Security guidance: `playbook/docs/33-security-and-responsible-disclosure.md`.
-Legal guidance: `playbook/docs/34-legal-and-licensing.md`.
+Security guidance: [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md).
+Legal guidance: [34-legal-and-licensing.md](./34-legal-and-licensing.md).
 
 ### 4) Ownership
 

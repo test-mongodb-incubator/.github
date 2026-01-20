@@ -4,8 +4,8 @@
 
 This framework is designed so builders can move quickly without ambiguity. Roles are defined to protect users (clear expectations) and reduce operational friction.
 
-For tier expectations, see `playbook/docs/11-tiers-and-expectations.md`.
-For the intake workflow, see `playbook/docs/30-intake-process.md`.
+For tier expectations, see [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+For the intake workflow, see [30-intake-process.md](./30-intake-process.md).
 
 ## Project Owner
 
@@ -27,7 +27,7 @@ Time expectations:
 
 Escalation path:
 
-- If the owner is non-responsive, escalate to the steering committee per `playbook/docs/22-review-cadence-and-health.md`.
+- If the owner is non-responsive, escalate to the steering committee per [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## Maintainers
 
@@ -88,7 +88,7 @@ Escalation path:
 
 - If a Supported project loses product alignment or ownership, coordinate with steering to demote or retire as appropriate.
 
-Exit and supported definition: `playbook/docs/13-supported-projects-and-exit.md`.
+Exit and supported definition: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ## Steering Committee
 
@@ -110,8 +110,8 @@ Escalation path:
 
 - For high-risk decisions, involve security/legal reviewers as appropriate.
 
-Operational handbook: `playbook/docs/02-quickstart-for-steering-committee.md`.
-Governance model: `playbook/docs/20-governance-model.md`.
+Operational handbook: [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).
+Governance model: [20-governance-model.md](./20-governance-model.md).
 
 ## DevRel / PMM (spotlighting and promotion content)
 
@@ -132,12 +132,12 @@ Escalation path:
 
 - If a project’s public messaging conflicts with its tier/support posture, coordinate with steering and the owner to correct it.
 
-Showcase guidance: `playbook/docs/41-showcase-program.md`.
-Spotlighting guidance: `playbook/docs/42-spotlighting-and-promotion-content.md`.
+Showcase guidance: [41-showcase-program.md](./41-showcase-program.md).
+Spotlighting guidance: [42-spotlighting-and-promotion-content.md](./42-spotlighting-and-promotion-content.md).
 
 ## Quick escalation matrix
 
-- **Owner unresponsive / repo stale:** `playbook/docs/22-review-cadence-and-health.md` → steering committee review.
-- **Tier change request:** `playbook/docs/12-promotion-and-demotion.md` → intake issue + evidence packet.
-- **Supported exit needed:** `playbook/docs/13-supported-projects-and-exit.md` → Sponsor PM + steering tracking.
-- **Security concern:** `playbook/docs/33-security-and-responsible-disclosure.md` → follow `SECURITY.md`.
+- **Owner unresponsive / repo stale:** [22-review-cadence-and-health.md](./22-review-cadence-and-health.md) → steering committee review.
+- **Tier change request:** [12-promotion-and-demotion.md](./12-promotion-and-demotion.md) → intake issue + evidence packet.
+- **Supported exit needed:** [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md) → Sponsor PM + steering tracking.
+- **Security concern:** [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md) → follow `SECURITY.md`.

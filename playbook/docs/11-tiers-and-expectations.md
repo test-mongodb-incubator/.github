@@ -25,7 +25,7 @@ Tiers are communicated in two places:
 | **Supported** | Production workloads and long-lived dependencies | Stronger stability expectations; SemVer required | Product-aligned ownership model; clear support channels | Regular releases and maintenance posture | Highest hygiene baseline; PM sponsor required | “Exit” to long-term home; retirement is a managed process |
 | **Retired** | N/A (read-only consumers) | No further changes; archived | No support; issues typically disabled | No releases | Archive state + clear banner | Must include retirement message and alternatives |
 
-If you’re choosing a tier as a builder, start with `playbook/docs/01-quickstart-for-builders.md`.
+If you’re choosing a tier as a builder, start with [01-quickstart-for-builders.md](./01-quickstart-for-builders.md).
 
 ## Tier details
 
@@ -136,7 +136,7 @@ If you’re choosing a tier as a builder, start with `playbook/docs/01-quickstar
 - Highest standard within the pipeline: clear docs, predictable releases, healthy triage.
 - Defined process for breaking changes and deprecations.
 
-Exit guidance: `playbook/docs/13-supported-projects-and-exit.md`.
+Exit guidance: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ### Retired
 
@@ -189,10 +189,10 @@ Regardless of tier, every project should have:
 - A support statement and support channels.
 - A license and contribution path.
 
-Canonical repo requirements: `playbook/docs/31-repo-requirements.md`.
-Promotion/demotion criteria: `playbook/docs/12-promotion-and-demotion.md`.
-Metadata and directory: `playbook/docs/40-directory-and-metadata.md`.
-Showcase expectations: `playbook/docs/41-showcase-program.md`.
-Release guidance: `playbook/docs/32-release-and-maintenance.md`.
-Security and disclosure: `playbook/docs/33-security-and-responsible-disclosure.md`.
-Legal and licensing: `playbook/docs/34-legal-and-licensing.md`.
+Canonical repo requirements: [31-repo-requirements.md](./31-repo-requirements.md).
+Promotion/demotion criteria: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
+Metadata and directory: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
+Showcase expectations: [41-showcase-program.md](./41-showcase-program.md).
+Release guidance: [32-release-and-maintenance.md](./32-release-and-maintenance.md).
+Security and disclosure: [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md).
+Legal and licensing: [34-legal-and-licensing.md](./34-legal-and-licensing.md).

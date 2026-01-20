@@ -4,8 +4,8 @@
 
 Spotlighting is “high signal” content: it helps the right users find the right project, and it can accelerate adoption and contributor interest. It should never make a project appear more supported than it is.
 
-Tier contract: `playbook/docs/11-tiers-and-expectations.md`.
-Showcase basics: `playbook/docs/41-showcase-program.md`.
+Tier contract: [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
+Showcase basics: [41-showcase-program.md](./41-showcase-program.md).
 
 ## Spotlight criteria (what’s compelling)
 
@@ -17,8 +17,8 @@ Spotlight a project when one or more of these is true:
 - It is strategically aligned and timely (e.g., important AI/framework ecosystem moments).
 - It is at a decision point (promotion to Incubating/Supported, or major new release).
 
-Signals and metrics guidance: `playbook/docs/50-success-metrics.md`.
-Showcase publishing workflow: `playbook/docs/41-showcase-program.md`.
+Signals and metrics guidance: [50-success-metrics.md](./50-success-metrics.md).
+Showcase publishing workflow: [41-showcase-program.md](./41-showcase-program.md).
 
 ## What spotlighting should always include
 
@@ -30,8 +30,8 @@ To keep trust high, every spotlight should explicitly state:
 - How to try it quickly (demo/quickstart)
 - Where to get help (issues/discussions/security policy link)
 
-Metadata and discovery: `playbook/docs/40-directory-and-metadata.md`.
-Repo requirements: `playbook/docs/31-repo-requirements.md`.
+Metadata and discovery: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
+Repo requirements: [31-repo-requirements.md](./31-repo-requirements.md).
 
 ## Content templates
 
@@ -87,7 +87,7 @@ Outline:
 - Migration guidance (if replacing alternatives)
 - Roadmap and contributor asks
 
-Comms copy/paste and snippets: `playbook/docs/06-comms-kit.md`.
+Comms copy/paste and snippets: [06-comms-kit.md](./06-comms-kit.md).
 
 ## Approval and publishing flow (recommended)
 
@@ -97,8 +97,8 @@ Keep approvals lightweight and focused on messaging accuracy:
 - **DevRel/PMM editorial review (optional but recommended for spotlights):** clarity, audience fit, tier/support language, consistency.
 - **Steering committee visibility (as needed):** if the spotlight coincides with promotion/demotion or a strategic announcement.
 
-Roles: `playbook/docs/21-roles-and-responsibilities.md`.
-Steering operations: `playbook/docs/02-quickstart-for-steering-committee.md`.
+Roles: [21-roles-and-responsibilities.md](./21-roles-and-responsibilities.md).
+Steering operations: [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).
 
 ## Promotion content (when tier is changing)
 
@@ -109,9 +109,9 @@ Tier changes should be accompanied by a small narrative update:
 - What remains experimental / what might still break
 - Any migration guidance if behavior changed
 
-Tier change process: `playbook/docs/12-promotion-and-demotion.md`.
-Evidence packet guidance: `playbook/docs/51-promotion-evidence-guide.md`.
-Intake workflow (system of record): `playbook/docs/30-intake-process.md`.
+Tier change process: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
+Evidence packet guidance: [51-promotion-evidence-guide.md](./51-promotion-evidence-guide.md).
+Intake workflow (system of record): [30-intake-process.md](./30-intake-process.md).
 
 ## Example outlines
 

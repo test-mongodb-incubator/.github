@@ -4,8 +4,8 @@
 
 This playbook is not legal advice. It exists to help builders avoid common pitfalls and know when to involve Legal.
 
-Repo contract: `playbook/docs/31-repo-requirements.md`.
-Release checklist: `playbook/docs/32-release-and-maintenance.md`.
+Repo contract: [31-repo-requirements.md](./31-repo-requirements.md).
+Release checklist: [32-release-and-maintenance.md](./32-release-and-maintenance.md).
 
 ## Default license: Apache 2.0
 

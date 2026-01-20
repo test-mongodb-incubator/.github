@@ -10,7 +10,7 @@ This doc covers:
 - **Project-level signals** (how an individual repo is performing)
 - **Customer Zero signals** (internal engineering usage as an early indicator)
 
-Tier changes use evidence, not just numbers. See `playbook/docs/12-promotion-and-demotion.md`.
+Tier changes use evidence, not just numbers. See [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
 
 ## Principles (how to use metrics)
 
@@ -30,8 +30,8 @@ These measure the effectiveness of the pipeline as a system.
 - Repos by tier (Experimental / Incubating / Supported / Retired)
 - Projects with a current heartbeat (`project.lifecycle.last_reviewed` within policy)
 
-Health policy: `playbook/docs/22-review-cadence-and-health.md`.
-Metadata contract: `playbook/docs/40-directory-and-metadata.md`.
+Health policy: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
+Metadata contract: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 ### Showcase and narrative output
 
@@ -39,7 +39,7 @@ Metadata contract: `playbook/docs/40-directory-and-metadata.md`.
 - Showcase cadence compliance for Incubating/Supported (e.g., “has posted in last 90 days”)
 - Spotlight features shipped (if you run a spotlighting program)
 
-Showcase program: `playbook/docs/41-showcase-program.md`.
+Showcase program: [41-showcase-program.md](./41-showcase-program.md).
 
 ### Community and contribution funnel
 
@@ -53,7 +53,7 @@ Showcase program: `playbook/docs/41-showcase-program.md`.
 - Successful exits to a long-term home (Supported exit outcomes)
 - Retirements with clear alternatives (portfolio hygiene)
 
-Supported/exit: `playbook/docs/13-supported-projects-and-exit.md`.
+Supported/exit: [13-supported-projects-and-exit.md](./13-supported-projects-and-exit.md).
 
 ## Project-level signals
 
@@ -103,7 +103,7 @@ Concrete indicators:
 - Documented internal adoption story (showcase entry)
 - Demonstrated “enabled solutions” count (how many projects/solutions it powered)
 
-Showcase adoption stories: `playbook/docs/41-showcase-program.md`.
+Showcase adoption stories: [41-showcase-program.md](./41-showcase-program.md).
 
 ## Where signals live (recommended)
 
@@ -113,7 +113,7 @@ Keep signals close to the project and machine-readable when possible:
 - Showcase posts (adoption stories, progress updates)
 - Issues/PRs (public evidence trail)
 
-Metadata: `playbook/docs/40-directory-and-metadata.md`.
+Metadata: [40-directory-and-metadata.md](./40-directory-and-metadata.md).
 
 ## Notes on tooling (Common Room, telemetry, etc.)
 
@@ -125,8 +125,8 @@ Tooling is optional. Use it only if it reduces manual work and respects privacy/
   - compliant with policy and consent expectations
   - documented in `pipeline.yaml` under `compliance.telemetry`
 
-Security considerations: `playbook/docs/33-security-and-responsible-disclosure.md`.
-Legal considerations: `playbook/docs/34-legal-and-licensing.md`.
+Security considerations: [33-security-and-responsible-disclosure.md](./33-security-and-responsible-disclosure.md).
+Legal considerations: [34-legal-and-licensing.md](./34-legal-and-licensing.md).
 
 ## How metrics influence decisions (quick mapping)
 
@@ -135,4 +135,4 @@ Legal considerations: `playbook/docs/34-legal-and-licensing.md`.
 - **Demote:** the project cannot meet the promises of its tier.
 - **Retire:** unmaintained or misleading; provide alternatives and document the decision.
 
-Decision process: `playbook/docs/12-promotion-and-demotion.md`.
+Decision process: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).

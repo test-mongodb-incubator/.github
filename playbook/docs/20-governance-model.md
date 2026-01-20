@@ -8,9 +8,9 @@ This framework is intentionally GitHub-native. Governance is designed to:
 - Make user expectations unambiguous (tiers + support posture).
 - Prevent “zombie repos” without heavy bureaucracy.
 
-For the operational “how we run meetings”, see `playbook/docs/02-quickstart-for-steering-committee.md`.
-For role definitions, see `playbook/docs/21-roles-and-responsibilities.md`.
-For tier definitions, see `playbook/docs/11-tiers-and-expectations.md`.
+For the operational “how we run meetings”, see [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).
+For role definitions, see [21-roles-and-responsibilities.md](./21-roles-and-responsibilities.md).
+For tier definitions, see [11-tiers-and-expectations.md](./11-tiers-and-expectations.md).
 
 ## Governance goals
 
@@ -67,8 +67,8 @@ The steering committee:
   - showcase guidance
 - Handles escalations for non-responsive ownership and risk concerns.
 
-Intake process: `playbook/docs/30-intake-process.md`.
-Tier change criteria: `playbook/docs/12-promotion-and-demotion.md`.
+Intake process: [30-intake-process.md](./30-intake-process.md).
+Tier change criteria: [12-promotion-and-demotion.md](./12-promotion-and-demotion.md).
 
 ## Decision model
 
@@ -81,7 +81,7 @@ For program decisions (intake, tier changes, spotlighting), outcomes are:
 - **Defer**
 - **Retire recommendation**
 
-These states are documented in `playbook/docs/02-quickstart-for-steering-committee.md`.
+These states are documented in [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md).
 
 ### Voting (lightweight)
 
@@ -128,7 +128,7 @@ Transparency is a feature of the program. At minimum:
 - `pipeline.yaml` is kept current so the directory stays trustworthy.
 - Health review outcomes are visible (issues or review comments).
 
-Review cadence and health: `playbook/docs/22-review-cadence-and-health.md`.
+Review cadence and health: [22-review-cadence-and-health.md](./22-review-cadence-and-health.md).
 
 ## What governance does not do
 
