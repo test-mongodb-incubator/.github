@@ -1,14 +1,168 @@
-**Purpose:** Explain how discovery works
-**Sections:**
+# Directory and Metadata
 
-* Why `pipeline.yaml` exists
-* Required fields vs optional fields
-* Tier-specific required metadata
-* How the directory gets generated
-* How to update metadata safely
+**Purpose:** Explain how discovery works, and how `pipeline.yaml` keeps the program trustworthy at scale.
 
+The directory is only as good as the metadata. `pipeline.yaml` is the machine-readable contract that powers:
 
-Sample:
+- A browsable directory (“what exists, who owns it, what tier is it?”)
+- Tier signaling and user trust (clear support posture)
+- Health automation (stale review detection and “still active” heartbeat)
+
+Repo baseline requirements: `playbook/docs/31-repo-requirements.md`.
+Tier expectations: `playbook/docs/11-tiers-and-expectations.md`.
+Health and heartbeat: `playbook/docs/22-review-cadence-and-health.md`.
+
+## Why `pipeline.yaml` exists
+
+GitHub repos are easy to create; consistent discovery is not.
+
+`pipeline.yaml` exists so that:
+
+- Humans can quickly find the right project for a use case.
+- Users can assess risk (tier + support posture) without guessing.
+- The steering committee can reason about the portfolio (ownership, health, adoption signals).
+- Automation can validate consistency and prevent drift (schema validation, stale review flags).
+
+## Where `pipeline.yaml` lives
+
+Unless otherwise specified by your templates:
+
+- Put `pipeline.yaml` in the **repo root**.
+
+If you later standardize on a subpath (e.g., `.mongodb/pipeline.yaml`), keep it consistent across all repos and update tooling accordingly.
+
+## Schema and validation
+
+The authoritative schema is:
+
+- `playbook/schemas/pipeline.schema.json`
+
+Validation should run in CI for every repo in the program. Treat schema failures as actionable errors, not as “nice to have” warnings.
+
+## Required vs optional fields
+
+The schema defines:
+
+- **Always-required fields** (must exist for every repo)
+- **Tier-gated required fields** (must exist when `project.tier` is a specific value)
+- **Optional fields** (high value, but not required)
+
+### Always-required fields (high level)
+
+Every `pipeline.yaml` must include:
+
+- `schema_version`
+- `project` (name/description/tier/lifecycle)
+- `ownership` (at least an owner)
+- `links` (repo URL)
+- `support` (statement + at least one channel)
+- `compliance` (license + CLA requirement)
+- `retirement` (status)
+
+### Optional but high leverage fields
+
+Depending on the project, these are often worth filling in:
+
+- `labels.keywords` (search and discovery)
+- `links.docs` and `links.homepage`
+- `signals` (internal adoption and community interest)
+- `compliance.telemetry` notes (if applicable)
+
+## Tier-specific required metadata (what changes by tier)
+
+Tier-specific requirements are enforced by the schema. This section summarizes the intent (the schema is the source of truth).
+
+### Experimental
+
+Intent: make it safe to evaluate by being explicit about audience and release posture.
+
+Schema-gated requirements include:
+
+- `audience.intended_users`
+- `release.versioning`
+
+### Incubating
+
+Intent: stronger hygiene, security reporting, and release/compatibility clarity.
+
+Schema-gated requirements include:
+
+- `ownership.maintainers`
+- `support.security_policy_url`
+- `labels.areas`
+- `project.lifecycle.last_reviewed`
+- `release.current_version` and `release.compatibility`
+
+### Supported
+
+Intent: committed ownership and SemVer + an exit plan tracked outside the schema.
+
+Schema-gated requirements include:
+
+- `ownership.maintainers`
+- `ownership.sponsor_pm.github`
+- `project.lifecycle.last_reviewed`
+- `release.versioning: semver`
+- `release.current_version`
+
+Supported and exit: `playbook/docs/13-supported-projects-and-exit.md`.
+
+### Retired
+
+Intent: eliminate user ambiguity and provide alternatives.
+
+Schema-gated requirements include:
+
+- `project.lifecycle.sunset_date`
+- `retirement.status: archived`
+- `retirement.message` and `retirement.alternatives`
+
+Retirement sequencing: `playbook/docs/11-tiers-and-expectations.md`.
+
+## How the directory gets generated
+
+The directory can be implemented in multiple ways, but the core idea is consistent:
+
+1. **Discover** repos in the org (by topic, allowlist, or GitHub search).
+2. **Fetch** each repo’s `pipeline.yaml`.
+3. **Validate** it against `playbook/schemas/pipeline.schema.json`.
+4. **Aggregate** into a registry (JSON/YAML snapshots).
+5. **Render** a human-friendly index (README table, GitHub Pages site, etc.).
+
+Recommended behaviors:
+
+- If metadata is invalid, fail validation and open/flag an issue in the repo (do not silently drop it).
+- If `project.lifecycle.last_reviewed` is stale, flag it for health review.
+
+## How to update metadata safely
+
+Metadata changes are user-visible and can affect trust. Treat them like a small release:
+
+### Safe update checklist
+
+- Update `pipeline.yaml` in a PR.
+- Ensure schema validation passes in CI.
+- If changing tier:
+  - update `README.md` tier badge/support statement
+  - follow the tier-change process
+  - publish a short showcase update explaining why
+
+Tier changes: `playbook/docs/12-promotion-and-demotion.md`.
+Showcase expectations: `playbook/docs/41-showcase-program.md`.
+
+### What should trigger a metadata update
+
+- Owner/maintainers changed
+- Support channels changed
+- Tier changed
+- New release published (update `release.current_version`)
+- Compatibility changed
+- Quarterly review/heartbeat update (`project.lifecycle.last_reviewed`)
+- Deprecation/retirement status changes
+
+## Sample `pipeline.yaml`
+
+This sample is representative of an Incubating project; tailor fields to your tier and project.
 
 ```yaml
 schema_version: "1.0"
@@ -93,3 +247,11 @@ retirement:
   message: null
   alternatives: []
 ```
+
+## Common mistakes (and how to avoid them)
+
+- **Tier drift:** `README.md` says one thing, `pipeline.yaml` says another. Keep them consistent.
+- **Stale ownership:** owner/maintainers left the team, but metadata never changed. Update promptly.
+- **Missing security policy link (Incubating+):** add `SECURITY.md` and set `support.security_policy_url`.
+- **Unclear docs links:** set `links.docs` to the best “start here” page (often the README).
+- **No heartbeat:** keep `project.lifecycle.last_reviewed` current so users can trust “active” status.
