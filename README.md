@@ -6,7 +6,8 @@ Why: Central place to enforce “minimum viable governance” and reduce frictio
 
 Contains:
 
-- [ ] CODE_OF_CONDUCT.md
+- [x] CODE_OF_CONDUCT.md
+  - [ ] describe means of reporting issues
 - [ ] SECURITY.md
 - [ ] SUPPORT.md (what “supported vs incubating” means in plain language)
 - [ ] CONTRIBUTING.md (org-wide contribution expectations)
