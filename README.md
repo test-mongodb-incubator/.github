@@ -6,11 +6,11 @@ Why: Central place to enforce “minimum viable governance” and reduce frictio
 
 Contains:
 
-- [x] CODE_OF_CONDUCT.md
+- [x] CODE_OF_CONDUCT.md (not https://www.mongodb.com/community-code-of-conduct)
   - [ ] describe means of reporting issues
 - [ ] SECURITY.md
 - [ ] SUPPORT.md (what “supported vs incubating” means in plain language)
-- [ ] CONTRIBUTING.md (org-wide contribution expectations)
+- [x] CONTRIBUTING.md (org-wide contribution expectations)
 - [ ] Issue templates (bug, feature request, showcase entry, promotion request, retirement request)
 - [ ] PR templates (incl. “release readiness” checklist)
 - [ ] Reusable workflows (license check, secret scan, required files check, metadata lint)
