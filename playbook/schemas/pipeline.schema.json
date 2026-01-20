@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mongodb.example/pipeline.schema.json",
+  "type": "object",
+  "required": ["schema_version", "project", "ownership", "links", "support", "compliance", "retirement"],
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+$" },
+
+    "project": {
+      "type": "object",
+      "required": ["name", "description", "tier", "lifecycle"],
+      "properties": {
+        "name": { "type": "string", "minLength": 3 },
+        "tagline": { "type": ["string", "null"] },
+        "description": { "type": "string", "minLength": 20 },
+        "tier": { "type": "string", "enum": ["experimental", "incubating", "supported", "retired"] },
+        "lifecycle": {
+          "type": "object",
+          "required": ["created"],
+          "properties": {
+            "created": { "type": "string", "format": "date" },
+            "last_reviewed": { "type": ["string", "null"], "format": "date" },
+            "sunset_date": { "type": ["string", "null"], "format": "date" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "ownership": {
+      "type": "object",
+      "required": ["owner"],
+      "properties": {
+        "owner": {
+          "type": "object",
+          "required": ["github"],
+          "properties": {
+            "name": { "type": ["string", "null"] },
+            "github": { "type": "string", "minLength": 1 },
+            "org": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "maintainers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["github"],
+            "properties": {
+              "name": { "type": ["string", "null"] },
+              "github": { "type": "string", "minLength": 1 },
+              "org": { "type": ["string", "null"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "sponsor_pm": {
+          "type": "object",
+          "properties": {
+            "name": { "type": ["string", "null"] },
+            "github": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "links": {
+      "type": "object",
+      "required": ["repo"],
+      "properties": {
+        "repo": { "type": "string", "format": "uri" },
+        "docs": { "type": ["string", "null"], "format": "uri" },
+        "homepage": { "type": ["string", "null"], "format": "uri" },
+        "showcase": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "url"],
+            "properties": {
+              "title": { "type": "string", "minLength": 3 },
+              "url": { "type": "string", "format": "uri" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "labels": {
+      "type": "object",
+      "properties": {
+        "areas": { "type": "array", "items": { "type": "string" } },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+
+    "audience": {
+      "type": "object",
+      "properties": {
+        "intended_users": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "enum": ["internal", "external", "both"] }
+        },
+        "personas": { "type": "array", "items": { "type": "string" } },
+        "maturity_expectation": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+
+    "support": {
+      "type": "object",
+      "required": ["statement", "channels"],
+      "properties": {
+        "statement": { "type": "string", "minLength": 10 },
+        "channels": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["type", "url"],
+            "properties": {
+              "type": { "type": "string", "enum": ["github-issues", "discussions", "slack", "forum", "other"] },
+              "url": { "type": "string", "format": "uri" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "security_policy_url": { "type": ["string", "null"], "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+
+    "release": {
+      "type": "object",
+      "properties": {
+        "versioning": { "type": "string", "enum": ["semver", "date", "none"] },
+        "current_version": { "type": ["string", "null"], "minLength": 1 },
+        "release_artifacts": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["source", "docker", "npm", "maven", "pypi", "rubygems", "other"] }
+        },
+        "compatibility": {
+          "type": "object",
+          "properties": {
+            "mongodb": { "type": "array", "items": { "type": "string" } },
+            "runtimes": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "compliance": {
+      "type": "object",
+      "required": ["license", "cla_required"],
+      "properties": {
+        "license": { "type": "string", "enum": ["Apache-2.0"] },
+        "cla_required": { "type": "boolean" },
+        "third_party_notices": { "type": ["boolean", "null"] },
+        "telemetry": {
+          "type": "object",
+          "properties": {
+            "present": { "type": "boolean" },
+            "notes": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "signals": { "type": "object" },
+
+    "retirement": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["active", "deprecated", "archived"] },
+        "message": { "type": ["string", "null"] },
+        "alternatives": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "allOf": [
+    {
+      "if": { "properties": { "project": { "properties": { "tier": { "const": "experimental" } } } } },
+      "then": {
+        "required": ["audience", "release"],
+        "properties": {
+          "release": { "required": ["versioning"] },
+          "audience": { "required": ["intended_users"] }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "project": { "properties": { "tier": { "const": "incubating" } } } } },
+      "then": {
+        "required": ["labels", "release"],
+        "properties": {
+          "ownership": { "required": ["maintainers"] },
+          "support": { "required": ["security_policy_url"] },
+          "release": { "required": ["current_version", "compatibility"] },
+          "labels": { "required": ["areas"] },
+          "project": { "properties": { "lifecycle": { "required": ["last_reviewed"] } } }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "project": { "properties": { "tier": { "const": "supported" } } } } },
+      "then": {
+        "properties": {
+          "ownership": {
+            "required": ["maintainers", "sponsor_pm"],
+            "properties": {
+              "sponsor_pm": { "required": ["github"] }
+            }
+          },
+          "release": {
+            "required": ["versioning", "current_version"],
+            "properties": { "versioning": { "const": "semver" } }
+          },
+          "project": { "properties": { "lifecycle": { "required": ["last_reviewed"] } } }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "project": { "properties": { "tier": { "const": "retired" } } } } },
+      "then": {
+        "properties": {
+          "retirement": { "required": ["message", "alternatives"], "properties": { "status": { "const": "archived" } } },
+          "project": { "properties": { "lifecycle": { "required": ["sunset_date"] } } }
+        }
+      }
+    }
+  ]
+}
