@@ -50,3 +50,14 @@ This playbook defines the program contract (tiers, repo requirements, governance
 - [90-faq.md](./90-faq.md)
 - [91-examples.md](./91-examples.md)
 - [92-changelog.md](./92-changelog.md)
+
+## TODOs (not yet fleshed out)
+
+- [ ] [02-quickstart-for-steering-committee.md](./02-quickstart-for-steering-committee.md)
+- [ ] [03-glossary.md](./03-glossary.md)
+- [ ] [05-one-pager.md](./05-one-pager.md)
+- [ ] [06-comms-kit.md](./06-comms-kit.md)
+- [ ] [60-templates.md](./60-templates.md)
+- [ ] [90-faq.md](./90-faq.md)
+- [ ] [91-examples.md](./91-examples.md)
+- [ ] [92-changelog.md](./92-changelog.md)
